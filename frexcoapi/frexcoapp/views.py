@@ -93,3 +93,6 @@ class FruitDetail(mixins.RetrieveModelMixin,
 
     def delete(self, request, *args, **kwargs):
         return self.destroy(request, *args, **kwargs)
+
+def index_help(request):
+    return render(request, 'index.html')

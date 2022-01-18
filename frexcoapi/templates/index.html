@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Início</title>
+</head>
+<body>
+    <h1>Início</h1>
+    <p>Para consultas gerais (get) ou criação (put), vá até:</p>
+    <p><a href="{% url 'region_list' %}">{% url 'region_list' %}</a> para regiões</p>
+    <p><a href="{% url 'fruit_list' %}">{% url 'fruit_list' %}</a> para frutas</p><hr>
+    <p>Para consulta específica (get), atualização (update) ou exclusão (delete) vá até:</p>
+    <p><a href="{% url 'region_list' %}">{% url 'region_list' %}{id}</a> para regiões</p>
+    <p><a href="{% url 'fruit_list' %}">{% url 'fruit_list' %}{id}</a> para frutas</p>
+</body>
+</html>
